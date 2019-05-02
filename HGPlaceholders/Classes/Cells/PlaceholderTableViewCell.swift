@@ -14,6 +14,7 @@ open class PlaceholderTableViewCell: UITableViewCell {
     var onActionButtonTap: (() -> Void)?
     
     // MARK: Properties 
+    @IBOutlet var bottomSpaceToContainerConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var titleLabel: UILabel?
     @IBOutlet weak var subtitleLabel: UILabel?
