@@ -264,12 +264,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = FP33JJN6C2;
+						DevelopmentTeam = 27JEZP5W2T;
 						LastSwiftMigration = 1000;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = FP33JJN6C2;
+						DevelopmentTeam = 27JEZP5W2T;
 						LastSwiftMigration = 1000;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -577,7 +577,7 @@
 			baseConfigurationReference = 576F9853BBED6C018D85C27A /* Pods-HGPlaceholders_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FP33JJN6C2;
+				DEVELOPMENT_TEAM = 27JEZP5W2T;
 				INFOPLIST_FILE = "$(SRCROOT)/HGPlaceholders/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -592,7 +592,7 @@
 			baseConfigurationReference = 665F8E8E336FB2C3FF9CC5BB /* Pods-HGPlaceholders_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FP33JJN6C2;
+				DEVELOPMENT_TEAM = 27JEZP5W2T;
 				INFOPLIST_FILE = "$(SRCROOT)/HGPlaceholders/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -606,7 +606,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 980B22E971009A9561037888 /* Pods-HGPlaceholders_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = FP33JJN6C2;
+				DEVELOPMENT_TEAM = 27JEZP5W2T;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -623,7 +623,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 089FFFAA5455B1FAC176F3A6 /* Pods-HGPlaceholders_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = FP33JJN6C2;
+				DEVELOPMENT_TEAM = 27JEZP5W2T;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";

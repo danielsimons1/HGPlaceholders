@@ -115,7 +115,7 @@ extension PlaceholderDataSourceDelegate: UITableViewDataSource {
             return cell
         }
         
-        placeholderTableViewCell.bottomSpaceToContainerConstraint.constant = UIScreen.main.bounds.height * 0.12
+        //placeholderTableViewCell.bottomSpaceToContainerConstraint.constant = UIScreen.main.bounds.height * 0.12
         
         fill(cell: placeholderTableViewCell, to: placeholder, tintColor: tableView.tintColor)
         
