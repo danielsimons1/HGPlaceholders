@@ -171,21 +171,37 @@ open class CollectionView: UICollectionView {
         return rows
     }
     
+    private func isShowNoResultsPlaceholder() -> Bool {
+        return numberOfRowsInAllSections() == 0
+    }
+    
+    private func isShowDefault() -> Bool {
+        if let dataSource = dataSource {
+            return dataSource is PlaceholderDataSourceDelegate
+        }
+        
+        return false
+    }
+    
     /**
      Reloads the rows and sections of the collection view.
      If the number of rows == 0 it shows no results placeholder
      */
     open override func reloadData() {
         // if the collectionView is empty we switch automatically to no data placeholder
-        if numberOfRowsInAllSections() == 0 {
+        
+        if isShowNoResultsPlaceholder() {
             showNoResultsPlaceholder()
             return
         }
+        
         // if the data source is in no data placeholder, and the user tries to reload data, we will switch automatically to default
-        if dataSource is PlaceholderDataSourceDelegate {
+        
+        if isShowDefault() {
             showDefault()
             return
         }
+        
         super.reloadData()
     }
 }
