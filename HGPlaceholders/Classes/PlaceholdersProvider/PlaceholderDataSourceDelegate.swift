@@ -120,7 +120,8 @@ extension PlaceholderDataSourceDelegate: UITableViewDataSource {
         fill(cell: placeholderTableViewCell, to: placeholder, tintColor: tableView.tintColor)
         
         // forward action to placeholder delegate
-        placeholderTableViewCell.onActionButtonTap = { [unowned self] in
+        placeholderTableViewCell.onActionButtonTap = { [weak self] in
+	    guard let self = self else { return }
             guard let placeholderTableView = (tableView as? TableView) else { return }
             placeholderTableView.placeholderDelegate?.view(tableView, actionButtonTappedFor: self.placeholder)
         }
