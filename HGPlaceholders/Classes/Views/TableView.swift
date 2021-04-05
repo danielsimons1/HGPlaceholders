@@ -124,7 +124,7 @@ open class TableView: UITableView {
     fileprivate var defaultAlwaysBounceVertical: Bool!
     
     /// The defaultTableViewHeader is used to save the tableview header when you switch to placeholders
-    fileprivate var defaultTableHeaderView: UIView?
+    var defaultTableHeaderView: UIView?
     
     /// The defaultTableViewFooter is used to save the tableview footer when you switch to placeholders
     fileprivate var defaultTableFooterView: UIView?
