@@ -76,8 +76,6 @@ open class TableView: UITableView {
             if tableHeaderView == nil {
                 return
             }
-            
-            defaultTableHeaderView = tableHeaderView
         }
     }
     
@@ -88,8 +86,6 @@ open class TableView: UITableView {
     open override var tableFooterView: UIView? {
         didSet {
             if tableFooterView == nil { return }
-            
-            defaultTableFooterView = tableFooterView
         }
     }
     
@@ -122,12 +118,6 @@ open class TableView: UITableView {
     
     /// The defaultAlwaysBounceVertical is used to save the tableview bouncing setup, because, when you switch to a placeholder, the vertical bounce is disabled
     fileprivate var defaultAlwaysBounceVertical: Bool!
-    
-    /// The defaultTableViewHeader is used to save the tableview header when you switch to placeholders
-    open var defaultTableHeaderView: UIView?
-    
-    /// The defaultTableViewFooter is used to save the tableview footer when you switch to placeholders
-    fileprivate var defaultTableFooterView: UIView?
     
     // MARK: - init methods
     
@@ -169,9 +159,6 @@ open class TableView: UITableView {
         defaultSeparatorStyle = separatorStyle
         defaultAlwaysBounceVertical = alwaysBounceVertical
         
-        defaultTableHeaderView = tableHeaderView
-        defaultTableFooterView = tableFooterView
-        
         customSetup()
     }
     
@@ -196,20 +183,11 @@ open class TableView: UITableView {
             // placeholder configuration
             super.separatorStyle = .none
             alwaysBounceVertical = placeholdersAlwaysBounceVertical
-            let style = placeholderDataSource.placeholder.style
-            if style?.shouldShowTableViewHeader != true { // style = nil or shouldShowTableViewHeader == false
-                tableHeaderView = nil
-            }
-            if style?.shouldShowTableViewFooter != true {
-                tableFooterView = nil
-            }
         }
         else {
             // default configuration
             separatorStyle = defaultSeparatorStyle
             alwaysBounceVertical = defaultAlwaysBounceVertical
-            tableHeaderView = defaultTableHeaderView
-            tableFooterView = defaultTableFooterView
         }
         
         dataSource = theDataSource
