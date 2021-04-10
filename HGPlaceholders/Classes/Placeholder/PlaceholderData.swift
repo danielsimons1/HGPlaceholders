@@ -28,6 +28,7 @@ public struct PlaceholderData {
     /// Should shows the activity indicator of the placeholder or not
     public var showsLoading = false
         
+    public var contentHeight: CGFloat? = 40
     // MARK: init methods
     
     

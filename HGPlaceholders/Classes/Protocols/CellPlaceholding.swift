@@ -78,7 +78,7 @@ extension CellPlaceholding {
         data?.showsLoading == true ? activityIndicator?.startAnimating() : activityIndicator?.stopAnimating()
         
         guard data?.image != nil else {
-            contentHeightConstraint?.constant = 20
+            contentHeightConstraint?.constant = data?.contentHeight ?? 40.0
             return
         }
         
