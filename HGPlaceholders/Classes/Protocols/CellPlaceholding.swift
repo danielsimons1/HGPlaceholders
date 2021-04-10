@@ -10,12 +10,14 @@ import UIKit
 
 protocol CellPlaceholding {
     
+    var isAlignTop: Bool { get }
     var titleLabel: UILabel? { get set }
     var subtitleLabel: UILabel? { get set }
     var placeholderImageView: UIImageView? { get set }
     var actionButton: UIButton? { get set }
     var activityIndicator: UIActivityIndicatorView? { get set }
-    
+    var topSpaceToContainerConstraint: NSLayoutConstraint? { get set }
+
     var cellView: UIView { get }
     
     
@@ -75,5 +77,10 @@ extension CellPlaceholding {
         placeholderImageView?.image = data?.image
         
         data?.showsLoading == true ? activityIndicator?.startAnimating() : activityIndicator?.stopAnimating()
+        
+        if data?.isAlignTop ?? false {
+            topSpaceToContainerConstraint?.priority = .defaultHigh
+            topSpaceToContainerConstraint?.constant = 40
+        }
     }
 }

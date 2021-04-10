@@ -11,17 +11,13 @@
 		16A0756DDF8EDB63BC9D681D774E4046 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80680092EC646C9F5B66BABFE411B8F /* NibLoadable.swift */; };
 		188B2D39A18542546FF1D117238F1C79 /* PlaceholderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0197C003CD7180ECA3123696BCB689 /* PlaceholderStyle.swift */; };
 		1EFBAE800B9E6D9F44320A2080137B30 /* PlaceholderTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 8873BE641317A91432986B1A3B81ADE4 /* PlaceholderTableViewCell.xib */; };
-		2B46B6F94E8F084000FB951639FAEC00 /* CollectionView+Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECF08097F6C15A22D63A6DA74B94451 /* CollectionView+Switcher.swift */; };
 		2D65F8DFA3550CB472EB2A1601DDFF4A /* PlaceholderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B949EB7BB812B7ED9558698943EF83 /* PlaceholderTableViewCell.swift */; };
 		2DCAF4AFAC26D4C70614CACD216F96D4 /* Pods-HGPlaceholders_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B133DB411BBA03BD4A7221253DEC6F4 /* Pods-HGPlaceholders_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		300FA9ACFF2831817EAD2CABADF589F4 /* Pods-HGPlaceholders_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7560B979D198A0E2DB26869FE43C28 /* Pods-HGPlaceholders_Example-dummy.m */; };
 		37E7F83E7792C6C5F2883215494368C7 /* Pods-HGPlaceholders_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A0B465F8E7BE9737ADDADDF1D44D503 /* Pods-HGPlaceholders_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D899A18B8B4B44F015E2A9E52002672 /* PlaceholdersSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EDDD951D1C728AB08E5B0DECD4FA38 /* PlaceholdersSwitcher.swift */; };
-		52CD25468E069843CFF033FF9D850A64 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5887EA6DC5562707884DB1A25A10A850 /* CollectionView.swift */; };
-		63C7AAC47EA1F0784CABEDFE233F5E47 /* PlaceholderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575CF815AA76CC5CD6C510EAD9E2F990 /* PlaceholderCollectionViewCell.swift */; };
 		6AF0A2F001D149D10C12A81150EAC1C4 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932B7F962DB3B12DFC6C4A587D7A46EA /* Placeholder.swift */; };
 		7348205110780D4DA1D87DB0008C1AF2 /* CellPlaceholding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8963A20BFF33DC5C08F05B9A4FCD4D2D /* CellPlaceholding.swift */; };
-		80949872F5021FC96A24D9AAEF81EF41 /* PlaceholderCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 98B19DFFA44B91612DA5F8836759F6C2 /* PlaceholderCollectionViewCell.xib */; };
 		A86B7E6004823FA79F291ED903A210A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		A9998B3D784C949F8D3686ED11EDF29B /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C5ED86B0AECC417CE65AAA9C6BE87F /* ErrorMessage.swift */; };
 		AE7AA020F8DC82DF0917BB0EFA8F9252 /* PlaceholderDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9A6B40A7DA6E16D67A1D733109164 /* PlaceholderDataSourceDelegate.swift */; };
@@ -64,15 +60,12 @@
 		4B133DB411BBA03BD4A7221253DEC6F4 /* Pods-HGPlaceholders_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HGPlaceholders_Example-umbrella.h"; sourceTree = "<group>"; };
 		4CA0F33373CA01C3903CCCF1A6A80172 /* HGPlaceholders-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HGPlaceholders-umbrella.h"; sourceTree = "<group>"; };
 		4E8C753CB7A5EAEE2EA2EB1387F9649E /* Pods-HGPlaceholders_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HGPlaceholders_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		575CF815AA76CC5CD6C510EAD9E2F990 /* PlaceholderCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceholderCollectionViewCell.swift; sourceTree = "<group>"; };
 		5868B0C37710646499BB5DFA51B5F7D3 /* Pods-HGPlaceholders_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HGPlaceholders_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5887EA6DC5562707884DB1A25A10A850 /* CollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		5EF1E4BB32376219966E243E5767EA83 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64C5ED86B0AECC417CE65AAA9C6BE87F /* ErrorMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6C7560B979D198A0E2DB26869FE43C28 /* Pods-HGPlaceholders_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HGPlaceholders_Example-dummy.m"; sourceTree = "<group>"; };
 		6D7F06B66206E2E28910026D25F587C2 /* PlaceholdersProvider+Defauls.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PlaceholdersProvider+Defauls.swift"; sourceTree = "<group>"; };
-		6ECF08097F6C15A22D63A6DA74B94451 /* CollectionView+Switcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CollectionView+Switcher.swift"; sourceTree = "<group>"; };
 		71165C6F3561A013AF2588B430F419E2 /* Pods_HGPlaceholders_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HGPlaceholders_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		777D244997CBB63DDEA8F6085F717819 /* Pods-HGPlaceholders_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HGPlaceholders_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7A0B465F8E7BE9737ADDADDF1D44D503 /* Pods-HGPlaceholders_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HGPlaceholders_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -85,7 +78,6 @@
 		8E0197C003CD7180ECA3123696BCB689 /* PlaceholderStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceholderStyle.swift; sourceTree = "<group>"; };
 		932B7F962DB3B12DFC6C4A587D7A46EA /* Placeholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98B19DFFA44B91612DA5F8836759F6C2 /* PlaceholderCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PlaceholderCollectionViewCell.xib; sourceTree = "<group>"; };
 		9A9A606704B7EDFD640F6A5563C528F3 /* Pods-HGPlaceholders_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HGPlaceholders_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D6899FE41B11ED0F10585DEBE4233BF /* HGPlaceholders-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HGPlaceholders-prefix.pch"; sourceTree = "<group>"; };
 		9D78DEA63EDDDB0121CF7D2DCC486E8B /* HGPlaceholders.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HGPlaceholders.modulemap; sourceTree = "<group>"; };
@@ -135,8 +127,6 @@
 		052682188802A9864B2078154F877CD8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5887EA6DC5562707884DB1A25A10A850 /* CollectionView.swift */,
-				6ECF08097F6C15A22D63A6DA74B94451 /* CollectionView+Switcher.swift */,
 				FD03E67964DAFFE5E86151AFEADB8D8F /* TableView.swift */,
 				C997F6606259F91EB7BA59336D758E6A /* TableView+Switcher.swift */,
 			);
@@ -302,8 +292,6 @@
 		CDCE17AAA13DCBFF4281E802A02AF8A8 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				575CF815AA76CC5CD6C510EAD9E2F990 /* PlaceholderCollectionViewCell.swift */,
-				98B19DFFA44B91612DA5F8836759F6C2 /* PlaceholderCollectionViewCell.xib */,
 				13B949EB7BB812B7ED9558698943EF83 /* PlaceholderTableViewCell.swift */,
 				8873BE641317A91432986B1A3B81ADE4 /* PlaceholderTableViewCell.xib */,
 			);
@@ -421,6 +409,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -460,14 +449,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7348205110780D4DA1D87DB0008C1AF2 /* CellPlaceholding.swift in Sources */,
-				2B46B6F94E8F084000FB951639FAEC00 /* CollectionView+Switcher.swift in Sources */,
-				52CD25468E069843CFF033FF9D850A64 /* CollectionView.swift in Sources */,
 				A9998B3D784C949F8D3686ED11EDF29B /* ErrorMessage.swift in Sources */,
 				BEF9E68B1B4647CEAB16FB81ED72B825 /* HGPlaceholders-dummy.m in Sources */,
 				16A0756DDF8EDB63BC9D681D774E4046 /* NibLoadable.swift in Sources */,
 				6AF0A2F001D149D10C12A81150EAC1C4 /* Placeholder.swift in Sources */,
-				63C7AAC47EA1F0784CABEDFE233F5E47 /* PlaceholderCollectionViewCell.swift in Sources */,
-				80949872F5021FC96A24D9AAEF81EF41 /* PlaceholderCollectionViewCell.xib in Sources */,
 				BB09FA3FED63435294BDEE2FF2BDB69B /* PlaceholderData.swift in Sources */,
 				AE7AA020F8DC82DF0917BB0EFA8F9252 /* PlaceholderDataSourceDelegate.swift in Sources */,
 				E4C61353CD38234F38867D46D6B057F0 /* PlaceholderKey.swift in Sources */,

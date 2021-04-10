@@ -115,8 +115,6 @@ extension PlaceholderDataSourceDelegate: UITableViewDataSource {
             return cell
         }
         
-        //placeholderTableViewCell.bottomSpaceToContainerConstraint.constant = UIScreen.main.bounds.height * 0.12
-        
         fill(cell: placeholderTableViewCell, to: placeholder, tintColor: tableView.tintColor)
         
         // forward action to placeholder delegate
@@ -167,52 +165,6 @@ extension PlaceholderDataSourceDelegate: UITableViewDelegate {
         
         guard let placeholderTableViewCell = cell as? PlaceholderTableViewCell else { return }
         animate(cell: placeholderTableViewCell)
-    }
-}
-
-
-// MARK: - collection view data source methods 
-
-extension PlaceholderDataSourceDelegate: UICollectionViewDataSource {
-
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let reuseIdentifier = placeholder.cellIdentifier ?? PlaceholderCollectionViewCell.reuseIdentifier
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-
-        // If the cell does not inherit from PlaceholderTableViewCell, the data and the style can't be applied
-        guard let placeholderCollectionViewCell = cell as? PlaceholderCollectionViewCell else {
-            return cell
-        }
-        
-        fill(cell: placeholderCollectionViewCell, to: placeholder, tintColor: collectionView.tintColor)
-        
-        // forward action to placeholder delegate
-        placeholderCollectionViewCell.onActionButtonTap = { [unowned self] in
-            guard let placeholderCollectionView = collectionView as? CollectionView else { return }
-            placeholderCollectionView.placeholderDelegate?.view(collectionView, actionButtonTappedFor: self.placeholder)
-        }
-        return cell
-    }
-}
-
-extension PlaceholderDataSourceDelegate: UICollectionViewDelegateFlowLayout {
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return .zero
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
-        return .zero
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let collectionViewHeight = height(of: collectionView)
-        return CGSize(width: collectionView.bounds.width, height: collectionViewHeight)
     }
 }
 
