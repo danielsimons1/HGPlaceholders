@@ -15,6 +15,9 @@ open class PlaceholderTableViewCell: UITableViewCell {
     
     @IBOutlet weak var contentHeightConstraint: NSLayoutConstraint?
     
+    @IBOutlet weak var titleVerticalConstraint: NSLayoutConstraint?
+    @IBOutlet weak var titleTopConstraint: NSLayoutConstraint?
+    
     // MARK: Properties
     @IBOutlet weak var titleLabel: UILabel?
     @IBOutlet weak var subtitleLabel: UILabel?

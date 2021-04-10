@@ -19,6 +19,8 @@ protocol CellPlaceholding {
     var cellView: UIView { get }
     
     var contentHeightConstraint: NSLayoutConstraint? { get }
+    var titleTopConstraint: NSLayoutConstraint? { get }
+    var titleVerticalConstraint: NSLayoutConstraint? { get }
     
     // MARK: fill cell to selected style
     
@@ -79,9 +81,13 @@ extension CellPlaceholding {
         
         guard data?.image != nil else {
             contentHeightConstraint?.constant = data?.contentHeight ?? 40.0
+            titleTopConstraint?.priority = .defaultHigh
+            titleVerticalConstraint?.priority = .defaultLow
             return
         }
         
+        titleTopConstraint?.priority = .defaultLow
+        titleVerticalConstraint?.priority = .defaultHigh
         contentHeightConstraint?.constant = 200
     }
 }

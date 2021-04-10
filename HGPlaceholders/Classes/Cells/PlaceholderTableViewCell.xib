@@ -20,7 +20,7 @@
                         <rect key="frame" x="16" y="50.666666666666657" width="288" height="200"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="halloween-loading" translatesAutoresizingMaskIntoConstraints="NO" id="oEI-sb-ulS">
-                                <rect key="frame" x="84" y="0.0" width="120" height="115"/>
+                                <rect key="frame" x="84" y="0.0" width="120" height="120"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oEI-sb-ulS" secondAttribute="height" multiplier="1:1" priority="100" id="PV3-EQ-CV6"/>
@@ -46,12 +46,13 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Efm-pp-P5W" secondAttribute="trailing" id="2MK-6G-LE2"/>
-                            <constraint firstItem="JBE-d5-jAM" firstAttribute="top" secondItem="oEI-sb-ulS" secondAttribute="bottom" constant="20" id="Fn4-ZK-lS3">
+                            <constraint firstItem="JBE-d5-jAM" firstAttribute="top" secondItem="oEI-sb-ulS" secondAttribute="bottom" priority="750" constant="20" id="Fn4-ZK-lS3">
                                 <variation key="heightClass=compact-widthClass=compact" constant="10"/>
                             </constraint>
                             <constraint firstItem="oEI-sb-ulS" firstAttribute="centerX" secondItem="db1-Fl-G6D" secondAttribute="centerX" id="Nlr-oX-BOZ"/>
                             <constraint firstItem="7OP-IO-NHg" firstAttribute="centerX" secondItem="db1-Fl-G6D" secondAttribute="centerX" id="OY8-Qs-j1L"/>
                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="Pcm-dr-q0u"/>
+                            <constraint firstItem="JBE-d5-jAM" firstAttribute="top" secondItem="db1-Fl-G6D" secondAttribute="top" priority="250" id="TaO-0J-Too"/>
                             <constraint firstItem="JBE-d5-jAM" firstAttribute="leading" secondItem="db1-Fl-G6D" secondAttribute="leading" id="Wz9-2h-jgi"/>
                             <constraint firstItem="oEI-sb-ulS" firstAttribute="top" secondItem="db1-Fl-G6D" secondAttribute="top" id="irM-On-QcZ"/>
                             <constraint firstAttribute="trailing" secondItem="JBE-d5-jAM" secondAttribute="trailing" id="j6Y-ST-aeS"/>
@@ -102,6 +103,8 @@
                 <outlet property="placeholderImageView" destination="oEI-sb-ulS" id="3dT-05-Ub6"/>
                 <outlet property="subtitleLabel" destination="Efm-pp-P5W" id="laL-gg-u6o"/>
                 <outlet property="titleLabel" destination="JBE-d5-jAM" id="R3t-Ch-56d"/>
+                <outlet property="titleTopConstraint" destination="TaO-0J-Too" id="0hH-tP-FHx"/>
+                <outlet property="titleVerticalConstraint" destination="Fn4-ZK-lS3" id="xmE-nZ-Zhr"/>
             </connections>
             <point key="canvasLocation" x="74" y="220.5"/>
         </tableViewCell>
