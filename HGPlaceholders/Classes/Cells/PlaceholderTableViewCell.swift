@@ -13,9 +13,9 @@ open class PlaceholderTableViewCell: UITableViewCell {
    
     var onActionButtonTap: (() -> Void)?
     
+    @IBOutlet weak var contentHeightConstraint: NSLayoutConstraint?
+    
     // MARK: Properties
-    var isAlignTop: Bool = false
-    @IBOutlet weak var topSpaceToContainerConstraint: NSLayoutConstraint?
     @IBOutlet weak var titleLabel: UILabel?
     @IBOutlet weak var subtitleLabel: UILabel?
     @IBOutlet weak var placeholderImageView: UIImageView?

@@ -10,16 +10,15 @@ import UIKit
 
 protocol CellPlaceholding {
     
-    var isAlignTop: Bool { get }
     var titleLabel: UILabel? { get set }
     var subtitleLabel: UILabel? { get set }
     var placeholderImageView: UIImageView? { get set }
     var actionButton: UIButton? { get set }
     var activityIndicator: UIActivityIndicatorView? { get set }
-    var topSpaceToContainerConstraint: NSLayoutConstraint? { get set }
 
     var cellView: UIView { get }
     
+    var contentHeightConstraint: NSLayoutConstraint? { get }
     
     // MARK: fill cell to selected style
     
@@ -78,9 +77,11 @@ extension CellPlaceholding {
         
         data?.showsLoading == true ? activityIndicator?.startAnimating() : activityIndicator?.stopAnimating()
         
-        if data?.isAlignTop ?? false {
-            topSpaceToContainerConstraint?.priority = .defaultHigh
-            topSpaceToContainerConstraint?.constant = 40
+        guard data?.image != nil else {
+            contentHeightConstraint?.constant = 20
+            return
         }
+        
+        contentHeightConstraint?.constant = 200
     }
 }

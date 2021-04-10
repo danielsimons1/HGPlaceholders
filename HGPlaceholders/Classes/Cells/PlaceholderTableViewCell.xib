@@ -88,7 +88,6 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailingMargin" secondItem="db1-Fl-G6D" secondAttribute="trailing" id="2Yy-w5-LN8"/>
-                    <constraint firstItem="db1-Fl-G6D" firstAttribute="top" secondItem="iKY-3X-d02" secondAttribute="top" priority="250" constant="30" id="Lam-63-zen"/>
                     <constraint firstItem="db1-Fl-G6D" firstAttribute="centerY" secondItem="iKY-3X-d02" secondAttribute="centerY" multiplier="0.8" priority="750" id="T7F-qH-5M0"/>
                     <constraint firstItem="QUR-tb-JTX" firstAttribute="centerX" secondItem="iKY-3X-d02" secondAttribute="centerX" id="fJs-fS-UMS"/>
                     <constraint firstItem="db1-Fl-G6D" firstAttribute="leading" secondItem="iKY-3X-d02" secondAttribute="leadingMargin" id="sSD-KP-29l"/>
@@ -99,10 +98,10 @@
             <connections>
                 <outlet property="actionButton" destination="QUR-tb-JTX" id="J5d-OT-2Ho"/>
                 <outlet property="activityIndicator" destination="7OP-IO-NHg" id="1pU-MP-eUj"/>
+                <outlet property="contentHeightConstraint" destination="Pcm-dr-q0u" id="5d4-Or-2ba"/>
                 <outlet property="placeholderImageView" destination="oEI-sb-ulS" id="3dT-05-Ub6"/>
                 <outlet property="subtitleLabel" destination="Efm-pp-P5W" id="laL-gg-u6o"/>
                 <outlet property="titleLabel" destination="JBE-d5-jAM" id="R3t-Ch-56d"/>
-                <outlet property="topSpaceToContainerConstraint" destination="Lam-63-zen" id="av8-As-uXu"/>
             </connections>
             <point key="canvasLocation" x="74" y="220.5"/>
         </tableViewCell>

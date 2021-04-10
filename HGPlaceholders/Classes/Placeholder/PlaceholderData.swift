@@ -27,9 +27,7 @@ public struct PlaceholderData {
     
     /// Should shows the activity indicator of the placeholder or not
     public var showsLoading = false
-    
-    public var isAlignTop = false
-    
+        
     // MARK: init methods
     
     
